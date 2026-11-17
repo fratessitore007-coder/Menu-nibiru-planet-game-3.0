@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Locale - Menu Digitale</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-color: #d4af37;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container { width: 100%; max-width: 600px; }
+        header { text-align: center; margin-bottom: 30px; }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; color: var(--accent-color); }
+        header p { color: var(--text-secondary); margin: 5px 0 0 0; font-size: 14px; }
+        .category { margin-bottom: 25px; }
+        .category h2 { font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 15px; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.5px; }
+        .item { background-color: var(--card-bg); border-radius: 8px; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; }
+        .item-info { flex-grow: 1; padding-right: 15px; }
+        .item-title { font-size: 16px; font-weight: 600; margin: 0 0 5px 0; }
+        .item-desc { font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.4; }
+        .item-price { font-size: 16px; font-weight: 600; color: var(--accent-color); white-space: nowrap; }
+        footer { text-align: center; margin-top: 40px; color: var(--text-secondary); font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NOME LOCALE</h1>
+            <p>Menu Digitale</p>
+        </header>
+        <section class="category">
+            <h2>Antipasti</h2>
+            <div class="item">
+                <div class="item-info">
+                    <h3 class="item-title">Bruschetta Classica</h3>
+                    <p class="item-desc">Pane casereccio tostato, pomodorini freschi, aglio, basilico e olio EVO.</p>
+                </div>
+                <div class="item-price">€ 6,00</div>
+            </div>
+        </section>
+        <footer>
+            <p>Menu Digitale - Prototipo</p>
+        </footer>
+    </div>
+</body>
+</html>
