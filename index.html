@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome Locale - Menu Digitale</title>
+    <title>Bar - Menu Digitale & Eventi</title>
     <style>
         :root {
             --bg-color: #121212;
             --card-bg: #1e1e1e;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
-            --accent-color: #d4af37;
+            --accent-color: #d4af7;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -22,12 +22,42 @@
             justify-content: center;
         }
         .container { width: 100%; max-width: 600px; }
-        header { text-align: center; margin-bottom: 30px; }
+        header { text-align: center; margin-bottom: 25px; }
         header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; color: var(--accent-color); }
         header p { color: var(--text-secondary); margin: 5px 0 0 0; font-size: 14px; }
+        
+        .welcome-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .welcome-box h3 { margin-top: 0; color: var(--accent-color); font-size: 18px; }
+        .welcome-box p { font-size: 13px; color: var(--text-secondary); margin-bottom: 15px; }
+        .welcome-box input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: #2a2a2a;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .welcome-box button {
+            background-color: var(--accent-color);
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
         .category { margin-bottom: 25px; }
         .category h2 { font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 15px; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.5px; }
-        .item { background-color: var(--card-bg); border-radius: 8px; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; }
+        .item { background-color: var(--card-bg); border-radius: 8px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; }
         .item-info { flex-grow: 1; padding-right: 15px; }
         .item-title { font-size: 16px; font-weight: 600; margin: 0 0 5px 0; }
         .item-desc { font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.4; }
@@ -38,19 +68,40 @@
 <body>
     <div class="container">
         <header>
-            <h1>NOME LOCALE</h1>
-            <p>Menu Digitale</p>
+            <h1>NOME BAR</h1>
+            <p>Drink & Cocktail Menu</p>
         </header>
+
+        <div class="welcome-box">
+            <h3>Iscriviti per gli Eventi</h3>
+            <p>Lascia la tua email per ricevere inviti e locandine dei nostri prossimi eventi esclusivi.</p>
+            <input type="email" placeholder="La tua email..." required>
+            <br>
+            <button onclick="alert('Iscrizione completata!')">Iscriviti</button>
+        </div>
+
         <section class="category">
-            <h2>Antipasti</h2>
+            <h2>Cocktail Classici</h2>
             <div class="item">
                 <div class="item-info">
-                    <h3 class="item-title">Bruschetta Classica</h3>
-                    <p class="item-desc">Pane casereccio tostato, pomodorini freschi, aglio, basilico e olio EVO.</p>
+                    <h3 class="item-title">Negroni</h3>
+                    <p class="item-desc">Gin, Vermouth Rosso, Campari, scorza d'arancia.</p>
+                </div>
+                <div class="item-price">€ 8,00</div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Analcolici</h2>
+            <div class="item">
+                <div class="item-info">
+                    <h3 class="item-title">Virgin Mojito</h3>
+                    <p class="item-desc">Lime fresco, menta, zucchero di canna, soda e ginger ale.</p>
                 </div>
                 <div class="item-price">€ 6,00</div>
             </div>
         </section>
+
         <footer>
             <p>Menu Digitale - Prototipo</p>
         </footer>
